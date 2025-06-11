@@ -463,4 +463,4 @@
 
 ### Primitive Exercises
 
-[Primitive Exercise](../rust-1.51-workshop/part1/)
+[Primitive Exercise](../chapter-exercises/part1/)

@@ -239,4 +239,4 @@
 
 ### Collections Exercise
 
-[Exercise](../rust-1.51-workshop/part2/)
+[Exercise](../chapter-exercises/part2/)
