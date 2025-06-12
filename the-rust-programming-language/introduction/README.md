@@ -25,6 +25,7 @@
     - **Rust does not support cross binary compilation (can you use your macbook to package a rust binary for mac as well as windows and linux)**
       - To accomplish this your program must be run on each device to be packages for that os
       - VM usage are more common to accomplish this
+    - **Rust does not supports classes and inheritance like other languages, it uses structs and implementation blocks instead**
 
  - **Who uses Rust?**
     - All sorts of orgs use Rust
