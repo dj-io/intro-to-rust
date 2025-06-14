@@ -1,13 +1,13 @@
 fn main() {
-    let city_names = vec!["Pythonia", "Javasburg", "C by the Sea", "Rustville"];
+    let mut city_names = vec!["Pythonia", "Javasburg", "C by the Sea", "Rustville"];
 
-    let last_city = "👉 TODO Use .pop() to remove the last city from the list.";
-    // 💡 TIP: Here's an example of pattern matching syntax:
-    //
-    //     match some_option_value {
-    //         Some(inner_value) => { ... }
-    //         None => { ... }
-    //     }
+
+    // the match is needed here because Rust does not have nulls and pop returns an Option<&str> (None if the vec is empty)
+    // this is similar to null checking in other languages
+    let last_city: &str = match city_names.pop() {
+        Some(city) => city, // if the vec is not empty, return the last city
+        None => "No city found", // if the vec is empty, return "No city found"
+    };
 
     if last_city.starts_with("R") {
         println!("“{}” starts with an R!", last_city);
@@ -15,13 +15,10 @@ fn main() {
         println!("“{}” doesn't start with R", last_city);
     }
 
-    // 👉 TODO now that we've done that, use `.push()` to put last_city
-    //    back in `city_names`.
+    city_names.push(last_city); // push the last city "Rustville" back to the vec
 
     println!("Here is the full list of cities:");
-    // 👉 TODO print each of the city names.
-    //
-    // 💡 TIP: Here's an example of `for` loop syntax:
-    //
-    //     for my_element in my_vec.iter() { ... }
+    for city in city_names.iter() {
+        println!("* {}", city);
+    }
 }

@@ -311,7 +311,7 @@
    - uints are more commonly used in rust
 
    *char*
-     - a `u32` that's been Univode validated
+     - a `u32` that's been Unicode validated
 
   *Converting numbers with as*
 
