@@ -26,6 +26,10 @@
       - To accomplish this your program must be run on each device to be packages for that os
       - VM usage are more common to accomplish this
     - **Rust does not supports classes and inheritance like other languages, it uses structs and implementation blocks instead**
+    - **The three main concepts of Rusts automatice memory management system are** ->
+      - [Ownership](../ownership/)
+      - [Borrowing](../borrowing)
+      - [Lifetimes](../lifetimes)
 
  - **Who uses Rust?**
     - All sorts of orgs use Rust
